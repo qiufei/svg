@@ -4,7 +4,7 @@ theme:
      light: journal
      dark: cyborg
 listing:
-  contents: talk
+  contents: svg
   sort: "date desc"
   type: grid
   categories: false
