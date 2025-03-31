@@ -1,0 +1,234 @@
+/* 调整标题位置 */
+.reveal .title {
+  margin-top: 200px !important; /* 负值使标题上移 */
+}
+
+/* 使所有图片居中显示并自动缩放 */
+.reveal .slide img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 70vh; /* 限制图片高度，确保在幻灯片中完整显示 */
+  height: auto;
+  object-fit: contain; /* 保持纵横比例缩放 */
+}
+
+/* 确保图片容器也居中 */
+.reveal .slide p > img {
+  margin: 0 auto;
+}
+
+/* 针对特定容器中的图片居中 */
+.reveal figure {
+  text-align: center;
+}
+
+/* 确保所有幻灯片中的图片适应容器 */
+.reveal .slides section img {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* 针对多列布局中的图片进行特殊处理 */
+.reveal .columns .column img {
+  max-height: 42vh; /* 为多列中的图片设置更小的高度限制 */
+  width: auto;      /* 保持宽高比 */
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 确保列布局中的图片容器不溢出 */
+.reveal .columns .column {
+  overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #8b4513;
+    --secondary-color: #d2b48c;
+    --bg-color: #f9f3e9;
+    --text-color: #333;
+    --border-color: #d2b48c;
+    --card-bg: #f5efe0;
+}
+
+body {
+    font-family: 'Noto Serif SC', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6b3510;
+}
+
+#generate-btn {
+    margin-top: 1.5rem;
+    align-self: flex-end;
+}
+
+.card-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    min-height: 300px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#card-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+#card-container svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.examples {
+    margin-top: 3rem;
+}
+
+.examples h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.example {
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.example:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.size-inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.size-inputs input {
+    width: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    color: var(--primary-color);
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .input-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-group {
+        max-width: 100%;
+    }
+}
+
+
+

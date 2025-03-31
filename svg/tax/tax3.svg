@@ -1,0 +1,195 @@
+<!-- filepath: d:\svg\svg\tax\tax_tips.svg -->
+<svg width="750" height="3200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- 定义全局样式 -->
+  <defs>
+    <!-- 卡片阴影 -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+    
+    <!-- 图标样式 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap');
+      
+      text {
+        font-family: 'Noto Sans SC', sans-serif;
+        fill: #333;
+      }
+      .title {
+        font-size: 36px;
+        font-weight: 700;
+        fill: #1a5fb4;
+      }
+      .subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        fill: #1a5fb4;
+      }
+      .card-title {
+        font-size: 28px;
+        font-weight: 700;
+        fill: #333;
+      }
+      .text-content {
+        font-size: 20px;
+        fill: #555;
+      }
+      .highlight {
+        font-weight: 500;
+        fill: #1a5fb4;
+      }
+      .card {
+        fill: white;
+        rx: 20;
+        ry: 20;
+        filter: url(#shadow);
+      }
+      .header {
+        fill: #1a5fb4;
+        rx: 20;
+        ry: 20;
+      }
+    </style>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#f5f9ff"/>
+  
+  <!-- 头部卡片 -->
+  <rect class="header" x="25" y="25" width="700" height="150"/>
+  <text x="50" y="110" fill="white" class="title">个人所得税汇算清缴 so easy</text>
+  
+  <!-- 基本信息卡片 -->
+  <rect class="card" x="25" y="200" width="700" height="180"/>
+  
+  <!-- 基本信息图标：日历和操作 -->
+  <circle cx="85" cy="250" r="30" fill="#e7f0ff"/>
+  <path d="M75,240 v-10 h20 v10 M70,240 h30 v35 h-30z" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  <text x="75" y="263" fill="#1a5fb4" font-size="12">3/1</text>
+  
+  <circle cx="85" cy="330" r="30" fill="#e7f0ff"/>
+  <path d="M75,335 l10,10 l20,-20" stroke="#1a5fb4" stroke-width="3" fill="none"/>
+  
+  <text x="130" y="255" class="card-title">汇缴操作</text>
+  <text x="130" y="290" class="text-content">2025年3月1日至2025年6月30日在个人所得税APP、</text>
+  <text x="130" y="320" class="text-content">自然人电子税务局系统完成申报</text>
+  
+  <text x="130" y="360" class="card-title">专项附加扣除能填尽填</text>
+  
+  <!-- 子女教育卡片 -->
+  <rect class="card" x="25" y="400" width="700" height="280"/>
+  
+  <!-- 子女教育图标 -->
+  <circle cx="85" cy="450" r="35" fill="#e7f0ff"/>
+  <path d="M65,450 h40 M85,430 v40 M70,440 l30,20 M70,460 l30,-20" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="455" class="card-title">子女教育</text>
+  <text x="130" y="495" class="text-content">• 扣除范围：3岁至博士研究生阶段的子女</text>
+  <text x="130" y="525" class="text-content">• 扣除标准：<tspan class="highlight">每个子女每月定额扣除2000元</tspan></text>
+  <text x="130" y="555" class="text-content">• 扣除主体：父母双方各扣50%，或由一方全额扣除</text>
+  <text x="130" y="585" class="text-content">• 注意事项：需留存子女学籍证明</text>
+  <text x="130" y="615" class="text-content">  境外教育需提供相关证明</text>
+  
+  <!-- 继续教育卡片 -->
+  <rect class="card" x="25" y="700" width="700" height="280"/>
+  
+  <!-- 继续教育图标 -->
+  <circle cx="85" cy="750" r="35" fill="#e7f0ff"/>
+  <path d="M65,760 h40 M85,735 l-20,15 l20,15 l20,-15 z M85,765 v15" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="755" class="card-title">继续教育</text>
+  <text x="130" y="795" class="text-content">• 扣除范围：学历继续教育和职业资格继续教育</text>
+  <text x="130" y="825" class="text-content">• 扣除标准：<tspan class="highlight">学历教育每月400元</tspan>；</text>
+  <text x="130" y="855" class="text-content">  <tspan class="highlight">职业资格教育取证当年一次性扣除3600元</tspan></text>
+  <text x="130" y="885" class="text-content">• 扣除主体：纳税人本人或其父母</text>
+  <text x="130" y="915" class="text-content">• 注意事项：证书需在人社部目录内</text>
+  
+  <!-- 大病医疗卡片 -->
+  <rect class="card" x="25" y="1000" width="700" height="280"/>
+  
+  <!-- 大病医疗图标 -->
+  <circle cx="85" cy="1050" r="35" fill="#e7f0ff"/>
+  <path d="M75,1050 h20 M85,1040 v20" stroke="#1a5fb4" stroke-width="3" fill="none"/>
+  <circle cx="85" cy="1050" r="25" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="1055" class="card-title">大病医疗</text>
+  <text x="130" y="1095" class="text-content">• 扣除范围：个人负担医疗费用超过1.5万元的部分</text>
+  <text x="130" y="1125" class="text-content">• 扣除标准：<tspan class="highlight">在8万元限额内据实扣除</tspan></text>
+  <text x="130" y="1155" class="text-content">• 扣除主体：纳税人本人或其配偶</text>
+  <text x="130" y="1185" class="text-content">• 注意事项：需留存医疗服务收费票据、医保结算单</text>
+  <text x="130" y="1215" class="text-content">  只能在年度汇算清缴时扣除</text>
+  
+  <!-- 住房贷款利息卡片 -->
+  <rect class="card" x="25" y="1300" width="700" height="280"/>
+  
+  <!-- 住房贷款图标 -->
+  <circle cx="85" cy="1350" r="35" fill="#e7f0ff"/>
+  <path d="M65,1360 h40 M65,1360 v-20 h40 v20 M85,1330 l-20,15 l20,15 l20,-15 z" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="1355" class="card-title">住房贷款利息</text>
+  <text x="130" y="1395" class="text-content">• 扣除范围：本人或配偶的首套住房商业贷款利息</text>
+  <text x="130" y="1425" class="text-content">• 扣除标准：<tspan class="highlight">每月定额扣除1000元，最长20年</tspan></text>
+  <text x="130" y="1455" class="text-content">• 扣除主体：纳税人本人或配偶</text>
+  <text x="130" y="1485" class="text-content">• 注意事项：需留存贷款合同、还款凭证</text>
+  <text x="130" y="1515" class="text-content">  不得与住房租金扣除同时享受</text>
+  
+  <!-- 住房租金卡片 -->
+  <rect class="card" x="25" y="1600" width="700" height="280"/>
+  
+  <!-- 住房租金图标 -->
+  <circle cx="85" cy="1650" r="35" fill="#e7f0ff"/>
+  <path d="M65,1665 h40 v-30 l-20,-15 l-20,15 z M75,1665 v-15 h20 v15" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="1655" class="card-title">住房租金</text>
+  <text x="130" y="1695" class="text-content">• 扣除范围：主要工作城市无自有住房而发生的租金</text>
+  <text x="130" y="1725" class="text-content">• 扣除标准：<tspan class="highlight">宁波每月1500元</tspan></text>
+  <text x="130" y="1755" class="text-content">• 扣除主体：签订租赁合同的纳税人</text>
+  <text x="130" y="1785" class="text-content">• 注意事项：需留存租赁合同、付款记录</text>
+  <text x="130" y="1815" class="text-content">  不得与住房贷款利息扣除同时享受</text>
+  
+  <!-- 赡养老人卡片 -->
+  <rect class="card" x="25" y="1900" width="700" height="280"/>
+  
+  <!-- 赡养老人图标 -->
+  <circle cx="85" cy="1950" r="35" fill="#e7f0ff"/>
+  <path d="M70,1960 c0,-15 30,-15 30,0 c0,10 -30,25 -15,25 M85,1940 c5,-10 10,0 0,5 c-10,5 -5,-15 0,-5" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="1955" class="card-title">赡养老人</text>
+  <text x="130" y="1995" class="text-content">• 扣除范围：赡养年满60岁的父母或祖父母、外祖父母</text>
+  <text x="130" y="2025" class="text-content">• 扣除标准：<tspan class="highlight">独生子女每月3000元；</tspan></text>
+  <text x="130" y="2055" class="text-content">  <tspan class="highlight">非独生子女每人每月不超过1500元</tspan></text>
+  <text x="130" y="2085" class="text-content">• 扣除主体：纳税人本人（兄弟姐妹需协商分摊）</text>
+  <text x="130" y="2115" class="text-content">• 注意事项：赡养多位老人不叠加扣除</text>
+  
+  <!-- 婴幼儿照护卡片 -->
+  <rect class="card" x="25" y="2200" width="700" height="280"/>
+  
+  <!-- 婴幼儿照护图标 -->
+  <circle cx="85" cy="2250" r="35" fill="#e7f0ff"/>
+  <path d="M75,2250 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 M75,2265 c0,-20 20,-20 20,0" stroke="#1a5fb4" stroke-width="2" fill="none"/>
+  
+  <text x="130" y="2255" class="card-title">3岁以下婴幼儿照护</text>
+  <text x="130" y="2295" class="text-content">• 扣除范围：纳税人照护3岁以下婴幼儿的支出</text>
+  <text x="130" y="2325" class="text-content">• 扣除标准：<tspan class="highlight">每个婴幼儿每月定额扣除2000元</tspan></text>
+  <text x="130" y="2355" class="text-content">• 扣除主体：父母双方各扣50%，或由一方全额扣除</text>
+  <text x="130" y="2385" class="text-content">• 注意事项：需填报婴幼儿出生医学证明等信息</text>
+  
+  <!-- 通用注意事项卡片 -->
+  <rect class="card" x="25" y="2500" width="700" height="380"/>
+  
+  <!-- 注意事项图标 -->
+  <circle cx="85" cy="2550" r="35" fill="#e7f0ff"/>
+  <text x="85" y="2560" text-anchor="middle" font-size="40" fill="#1a5fb4" font-weight="bold">!</text>
+  
+  <text x="130" y="2555" class="card-title">通用注意事项</text>
+  <text x="130" y="2595" class="text-content">• 申报材料：所有扣除需留存相关证明材料备查</text>
+  <text x="130" y="2625" class="text-content">• 扣除时间：符合条件的年度内扣除，逾期不可补扣</text>
+  <text x="130" y="2655" class="text-content">• 重复申报风险：同一项目不得重复享受</text>
+  <text x="130" y="2685" class="text-content">• 虚假申报责任：虚报信息将影响纳税信用</text>
+  <text x="130" y="2715" class="text-content">• 个人养老金：每年缴纳上限12000元</text>
+  <text x="130" y="2745" class="text-content">  2024年存入需申报，可退税</text>
+  <text x="130" y="2775" class="text-content">• 务必通过官方渠道如实申报，谨防诈骗</text>
+  
+  <!-- 页脚 -->
+  <text x="375" y="2950" text-anchor="middle" font-size="20" fill="#1a5fb4">个人所得税汇算清缴小贴士</text>
+</svg>

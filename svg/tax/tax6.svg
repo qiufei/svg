@@ -1,0 +1,438 @@
+<svg width="500" height="3180" viewBox="0 0 500 3180" xmlns="http://www.w3.org/2000/svg" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A365D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A4365;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sectionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2C5282;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2B6CB0;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .title { font-size: 28px; font-weight: 700; fill: #FFFFFF; text-anchor: middle; letter-spacing: 1px; }
+      .subtitle { font-size: 16px; fill: #E2E8F0; text-anchor: middle; letter-spacing: 0.5px; }
+      .header-text { font-size: 14px; fill: #2D3748; }
+      .section-title { font-size: 18px; font-weight: 600; fill: #FFFFFF; text-anchor: middle; letter-spacing: 0.5px; }
+      .table-header { font-size: 15px; font-weight: 600; fill: #2C5282; text-anchor: start; }
+      .table-content { font-size: 14px; fill: #2D3748; text-anchor: start; line-height: 1.5; }
+      .highlight { font-weight: 600; fill: #3182CE; }
+      .note-title { font-size: 14px; font-weight: 600; fill: #2C5282; }
+      .note-content { font-size: 14px; fill: #4A5568; line-height: 1.6; }
+      .section-icon { font-size: 18px; fill: #FFFFFF; }
+      .contentBox { fill: #FFFFFF; rx: 10; ry: 10; filter: url(#dropShadow); }
+      .sectionHeader { fill: url(#sectionGrad); rx: 6; ry: 6; }
+      .tableHeaderCell { fill: #EBF4FF; rx: 4; ry: 4; }
+      .tableContentCell { fill: #FFFFFF; rx: 4; ry: 4; stroke: #E2E8F0; stroke-width: 1; }
+      .bulletPoint { font-size: 14px; fill: #3182CE; font-weight: bold; }
+      .warning-section { fill: #C53030; rx: 6; ry: 6; }
+      .divider { stroke: #E2E8F0; stroke-width: 1; }
+      .icon-path { fill: #FFFFFF; stroke: none; }
+    </style>
+  </defs>
+  <!-- Background Gradient -->
+  <rect width="500" height="3180" fill="#F7FAFC" />
+  
+  <!-- Header Section with updated gradient -->
+  <rect x="0" y="0" width="500" height="110" fill="url(#grad1)" />
+  <text x="250" y="50" class="title">个人所得税汇算清缴</text>
+  <text x="250" y="80" class="subtitle">小贴士</text>
+
+  <!-- Main Content Area with shadow effect -->
+  <rect x="20" y="120" width="460" height="3040" class="contentBox" />
+  
+  <!-- Section 1: Filing Procedure -->
+  <rect x="40" y="140" width="420" height="40" class="sectionHeader" />
+  <g transform="translate(60, 165)">
+    <path d="M-5,-10 h14 v4 h-2 v10 h-10 v-10 h-2 v-4 M7,-6 v-4 M1,-6 v-4" class="icon-path" />
+    <rect x="-4" y="-5" width="12" height="10" fill="#FFFFFF" opacity="0.6" rx="1" />
+    <line x1="-2" y1="-2" x2="4" y2="-2" stroke="#FFFFFF" stroke-width="1" />
+    <line x1="-2" y1="1" x2="4" y2="1" stroke="#FFFFFF" stroke-width="1" />
+  </g>
+  <text x="250" y="165" class="section-title">申报时间与渠道</text>
+  
+  <text x="50" y="200" class="table-content">
+    <tspan x="50" dy="1.4em">申报期限：2025年3月1日至2025年6月30日</tspan>
+    <tspan x="50" dy="1.6em">申报渠道：个人所得税APP、自然人电子税务局系统</tspan>
+  </text>
+  
+  <!-- Section 2: Special Additional Deductions Intro -->
+  <rect x="40" y="250" width="420" height="40" class="sectionHeader" />
+  <g transform="translate(60, 275)">
+    <circle cx="0" cy="0" r="10" fill="#FFFFFF" opacity="0.6" />
+    <path d="M-4,-2 l3,5 l5,-8" stroke="#FFFFFF" stroke-width="2" fill="none" />
+  </g>
+  <text x="250" y="275" class="section-title">专项附加扣除概览</text>
+  
+  <text x="50" y="305" class="table-content">
+    <tspan x="50" dy="1.4em">最大化税收优惠：确保所有适用的专项附加扣除项目均已填报</tspan>
+  </text>
+  
+  <!-- 子女教育部分 - 替换01为图标 -->
+  <g transform="translate(40, 340)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <path d="M-8,-5 L8,-5 L0,-12 Z" class="icon-path" />
+      <rect x="-10" y="-4" width="20" height="15" fill="#FFFFFF" opacity="0.7" rx="2" />
+      <path d="M-8,11 L8,11 L8,-4 L-8,-4 Z" class="icon-path" opacity="0.6" />
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#FFFFFF" stroke-width="1" />
+      <line x1="-5" y1="4" x2="5" y2="4" stroke="#FFFFFF" stroke-width="1" />
+    </g>
+    <text x="210" y="25" class="section-title">子女教育</text>
+
+    <rect x="0" y="45" width="100" height="100" class="tableHeaderCell"/>
+    <text x="15" y="95" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="100" class="tableContentCell"/>
+    <text x="110" y="70" class="table-content">
+      <tspan x="110" dy="0">• 3岁至博士研究生阶段的子女</tspan>
+      <tspan x="110" dy="1.5em">  (学前教育至全日制学历教育)。</tspan>
+      <tspan x="110" dy="1.5em">• 境内或境外接受教育均可扣除。</tspan>
+    </text>
+
+    <rect x="0" y="150" width="100" height="45" class="tableHeaderCell"/>
+    <text x="15" y="175" class="table-header">扣除标准</text>
+    <rect x="100" y="150" width="320" height="45" class="tableContentCell"/>
+    <text x="110" y="175" class="table-content">每个子女每月定额扣除 <tspan class="highlight">2000元</tspan>。</text>
+
+    <rect x="0" y="200" width="100" height="60" class="tableHeaderCell"/>
+    <text x="15" y="230" class="table-header">扣除主体</text>
+    <rect x="100" y="200" width="320" height="60" class="tableContentCell"/>
+    <text x="110" y="220" class="table-content">
+      <tspan x="110" dy="0">• 父母双方各扣<tspan class="highlight">50%</tspan>，或</tspan>
+      <tspan x="110" dy="1.5em">• 由一方按扣除标准的<tspan class="highlight">100%</tspan>全额扣除。</tspan>
+    </text>
+
+    <rect x="0" y="265" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="305" class="table-header">注意事项</text>
+    <rect x="100" y="265" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="285" class="table-content">
+      <tspan x="110" dy="0">• 需留存子女学籍证明备查。</tspan>
+      <tspan x="110" dy="1.5em">• 境外教育需提供录取通知书、</tspan>
+      <tspan x="110" dy="1.5em">  留学签证等证明文件。</tspan>
+    </text>
+  </g>
+
+  <!-- 继续教育部分 - 替换02为图标 -->
+  <g transform="translate(40, 680)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <path d="M-10,-5 L10,-5 L10,7 L-10,7 Z" class="icon-path" opacity="0.7" />
+      <path d="M-7,-2 L7,-2 M-7,2 L3,2" stroke="#FFFFFF" stroke-width="1.2" />
+      <path d="M-8,7 L-4,12 L4,12 L8,7" class="icon-path" opacity="0.9" />
+      <circle cx="7" cy="5" r="3" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <text x="210" y="25" class="section-title">继续教育</text>
+
+    <rect x="0" y="45" width="100" height="100" class="tableHeaderCell"/>
+    <text x="15" y="85" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="100" class="tableContentCell"/>
+    <text x="110" y="65" class="table-content">
+      <tspan x="110" dy="0">• 学历(学位)继续教育：</tspan>
+      <tspan x="120" dy="1.5em">境内本科及以下学历(学位)教育。</tspan>
+      <tspan x="110" dy="1.5em">• 职业资格继续教育：</tspan>
+      <tspan x="120" dy="1.5em">取得人社部《国家职业资格目录》证书。</tspan>
+    </text>
+
+    <rect x="0" y="150" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="180" class="table-header">扣除标准</text>
+    <rect x="100" y="150" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="170" class="table-content">
+      <tspan x="110" dy="0">• 学历教育：每月<tspan class="highlight">400元</tspan> (最长48个月)。</tspan>
+      <tspan x="110" dy="1.5em">• 职业资格教育：取得证书当年</tspan>
+      <tspan x="110" dy="1.5em">  一次性扣除 <tspan class="highlight">3600元</tspan>。</tspan>
+    </text>
+
+    <rect x="0" y="230" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="255" class="table-header">扣除主体</text>
+    <rect x="100" y="230" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="250" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人 (职业资格教育)。</tspan>
+      <tspan x="110" dy="1.5em">• 本人或其父母 (学历教育)。</tspan>
+    </text>
+
+    <rect x="0" y="290" width="100" height="65" class="tableHeaderCell"/>
+    <text x="15" y="325" class="table-header">注意事项</text>
+    <rect x="100" y="290" width="320" height="65" class="tableContentCell"/>
+    <text x="110" y="310" class="table-content">
+      <tspan x="110" dy="0">• 职业资格证书需在人社部目录内。</tspan>
+      <tspan x="110" dy="1.5em">• 同一学历继续教育不可重复扣除。</tspan>
+    </text>
+  </g>
+
+  <!-- 大病医疗部分 - 替换03为图标 -->
+  <g transform="translate(40, 1055)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF" opacity="0.4" />
+      <path d="M-6,0 L6,0 M0,-6 L0,6" stroke="#FFFFFF" stroke-width="2" />
+      <path d="M-8,-8 L-12,-10 L-12,10 L-8,8" class="icon-path" opacity="0.7" />
+      <path d="M8,-8 L12,-10 L12,10 L8,8" class="icon-path" opacity="0.7" />
+    </g>
+    <text x="210" y="25" class="section-title">大病医疗</text>
+
+    <rect x="0" y="45" width="100" height="100" class="tableHeaderCell"/>
+    <text x="15" y="85" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="100" class="tableContentCell"/>
+    <text x="110" y="65" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人、配偶或未成年子女医疗费。</tspan>
+      <tspan x="110" dy="1.5em">• 医保相关支出，扣除报销后个人负担</tspan>
+      <tspan x="110" dy="1.5em">  累计超过 <tspan class="highlight">1.5万元</tspan> 的部分。</tspan>
+    </text>
+
+    <rect x="0" y="150" width="100" height="40" class="tableHeaderCell"/>
+    <text x="15" y="175" class="table-header">扣除标准</text>
+    <rect x="100" y="150" width="320" height="40" class="tableContentCell"/>
+    <text x="110" y="175" class="table-content">在 <tspan class="highlight">8万元</tspan>限额内据实扣除。</text>
+
+    <rect x="0" y="195" width="100" height="70" class="tableHeaderCell"/>
+    <text x="15" y="230" class="table-header">扣除主体</text>
+    <rect x="100" y="195" width="320" height="70" class="tableContentCell"/>
+    <text x="110" y="215" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人或其配偶。</tspan>
+      <tspan x="110" dy="1.5em">• 未成年子女医疗费用由父母一方扣除。</tspan>
+    </text>
+
+    <rect x="0" y="270" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="310" class="table-header">注意事项</text>
+    <rect x="100" y="270" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="290" class="table-content">
+      <tspan x="110" dy="0">• 需留存医疗收费票据、医保结算单等。</tspan>
+      <tspan x="110" dy="1.5em">• 只能在年度汇算清缴时扣除，</tspan>
+      <tspan x="110" dy="1.5em">  预缴时不可扣除。</tspan>
+    </text>
+  </g>
+
+  <!-- 住房贷款利息部分 - 替换04为图标 -->
+  <g transform="translate(40, 1410)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <path d="M-10,5 L-10,-2 L0,-10 L10,-2 L10,5 Z" class="icon-path" opacity="0.7" />
+      <rect x="-6" y="-1" width="12" height="6" fill="#FFFFFF" opacity="0.5" />
+      <path d="M-6,8 C-6,8 -3,5 0,5 C3,5 6,8 6,8" stroke="#FFFFFF" stroke-width="1.2" fill="none"/>
+      <circle cx="-2" cy="9" r="2" fill="#FFFFFF" opacity="0.8" />
+    </g>
+    <text x="210" y="25" class="section-title">住房贷款利息</text>
+
+    <rect x="0" y="45" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="75" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="65" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人或配偶的</tspan>
+      <tspan x="110" dy="1.5em">  首套住房商业贷款利息。</tspan>
+    </text>
+
+    <rect x="0" y="105" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="135" class="table-header">扣除标准</text>
+    <rect x="100" y="105" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="125" class="table-content">
+      <tspan x="110" dy="0">• 每月定额扣除 <tspan class="highlight">1000元</tspan>。</tspan>
+      <tspan x="110" dy="1.5em">• 最长不超过 240个月 (20年)。</tspan>
+    </text>
+
+    <rect x="0" y="165" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="205" class="table-header">扣除主体</text>
+    <rect x="100" y="165" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="185" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人或配偶。</tspan>
+      <tspan x="110" dy="1.5em">• 婚前各自购房：可各自扣<tspan class="highlight">50%</tspan>，或</tspan>
+      <tspan x="110" dy="1.5em">  由一方全额扣 <tspan class="highlight">100%</tspan>。</tspan>
+    </text>
+
+    <rect x="0" y="245" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="285" class="table-header">注意事项</text>
+    <rect x="100" y="245" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="265" class="table-content">
+      <tspan x="110" dy="0">• 需留存贷款合同、还款凭证。</tspan>
+      <tspan x="110" dy="1.5em">• 不得与住房租金扣除同时享受。</tspan>
+    </text>
+  </g>
+
+  <!-- 住房租金部分 - 替换05为图标 -->
+  <g transform="translate(40, 1745)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <path d="M-10,5 L-10,-2 L0,-10 L10,-2 L10,5 Z" class="icon-path" opacity="0.7" />
+      <path d="M-4,5 L-4,-1 L4,-1 L4,5" fill="#FFFFFF" opacity="0.5" />
+      <circle cx="7" cy="3" r="3" fill="#FFFFFF" opacity="0.8" />
+      <path d="M5,5 L9,1" stroke="#FFFFFF" stroke-width="1" />
+    </g>
+    <text x="210" y="25" class="section-title">住房租金</text>
+
+    <rect x="0" y="45" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="75" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="65" class="table-content">
+      <tspan x="110" dy="0">• 纳税人在主要工作城市无自有住房</tspan>
+      <tspan x="110" dy="1.5em">  而发生的租房支出。</tspan>
+    </text>
+
+    <rect x="0" y="105" width="100" height="40" class="tableHeaderCell"/>
+    <text x="15" y="130" class="table-header">扣除标准</text>
+    <rect x="100" y="105" width="320" height="40" class="tableContentCell"/>
+    <text x="110" y="130" class="table-content">宁波地区每月 <tspan class="highlight">1500元</tspan>。</text>
+
+    <rect x="0" y="150" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="180" class="table-header">扣除主体</text>
+    <rect x="100" y="150" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="170" class="table-content">
+      <tspan x="110" dy="0">• 签订租赁合同的纳税人。</tspan>
+      <tspan x="110" dy="1.5em">• 夫妻同城只能一方扣除。</tspan>
+    </text>
+
+    <rect x="0" y="210" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="250" class="table-header">注意事项</text>
+    <rect x="100" y="210" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="230" class="table-content">
+      <tspan x="110" dy="0">• 需留存住房租赁合同、协议</tspan>
+      <tspan x="110" dy="1.5em">  或付款记录。</tspan>
+      <tspan x="110" dy="1.5em">• 不得与住房贷款利息扣除同时享受。</tspan>
+    </text>
+  </g>
+
+  <!-- 赡养老人部分 - 替换06为图标 -->
+  <g transform="translate(40, 2040)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <circle cx="-4" cy="-2" r="6" fill="#FFFFFF" opacity="0.5" />
+      <path d="M-4,4 C-2,6 0,7 2,6 C4,5 5,2 5,-1 C5,-4 3,-7 0,-7 C-3,-7 -7,-4 -7,0" stroke="#FFFFFF" stroke-width="1.5" fill="none" />
+      <path d="M-7,0 L-4,-2 L-1,0" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    </g>
+    <text x="210" y="25" class="section-title">赡养老人</text>
+
+    <rect x="0" y="45" width="100" height="85" class="tableHeaderCell"/>
+    <text x="15" y="90" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="85" class="tableContentCell"/>
+    <text x="110" y="65" class="table-content">
+      <tspan x="110" dy="0">• 赡养年满60岁的父母。</tspan>
+      <tspan x="110" dy="1.5em">• 或子女均已去世的年满60岁的</tspan>
+      <tspan x="110" dy="1.5em">  祖父母、外祖父母。</tspan>
+    </text>
+
+    <rect x="0" y="135" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="175" class="table-header">扣除标准</text>
+    <rect x="100" y="135" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="155" class="table-content">
+      <tspan x="110" dy="0">• 独生子女：每月 <tspan class="highlight">3000元</tspan>；</tspan>
+      <tspan x="110" dy="1.5em">• 非独生子女：每人每月不超过</tspan>
+      <tspan x="110" dy="1.5em">  <tspan class="highlight">1500元</tspan> (需签分摊协议)。</tspan>
+    </text>
+
+    <rect x="0" y="215" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="245" class="table-header">扣除主体</text>
+    <rect x="100" y="215" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="235" class="table-content">
+      <tspan x="110" dy="0">• 纳税人本人。</tspan>
+      <tspan x="110" dy="1.5em">• 兄弟姐妹需协商分摊比例。</tspan>
+    </text>
+
+    <rect x="0" y="275" width="100" height="75" class="tableHeaderCell"/>
+    <text x="15" y="315" class="table-header">注意事项</text>
+    <rect x="100" y="275" width="320" height="75" class="tableContentCell"/>
+    <text x="110" y="295" class="table-content">
+      <tspan x="110" dy="0">• 需留存赡养协议或共同赡养人信息。</tspan>
+      <tspan x="110" dy="1.5em">• 赡养多位老人不叠加扣除。</tspan>
+    </text>
+  </g>
+
+  <!-- 3岁以下婴幼儿照护部分 - 替换07为图标 -->
+  <g transform="translate(40, 2390)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <circle cx="0" cy="0" r="5" fill="#FFFFFF" opacity="0.7" />
+      <path d="M-4,-7 C-8,-5 -10,0 -8,4 C-6,8 -2,9 2,7 C6,5 8,0 6,-4 C4,-8 0,-9 -4,-7" stroke="#FFFFFF" stroke-width="1" fill="#FFFFFF" opacity="0.4" />
+      <path d="M0,5 L0,9 M-3,7 L3,7" stroke="#FFFFFF" stroke-width="1" />
+    </g>
+    <text x="210" y="25" class="section-title">3岁以下婴幼儿照护</text>
+
+    <rect x="0" y="45" width="100" height="40" class="tableHeaderCell"/>
+    <text x="15" y="70" class="table-header">扣除范围</text>
+    <rect x="100" y="45" width="320" height="40" class="tableContentCell"/>
+    <text x="110" y="70" class="table-content">纳税人照护3岁以下婴幼儿的支出。</text>
+
+    <rect x="0" y="90" width="100" height="40" class="tableHeaderCell"/>
+    <text x="15" y="115" class="table-header">扣除标准</text>
+    <rect x="100" y="90" width="320" height="40" class="tableContentCell"/>
+    <text x="110" y="115" class="table-content">每个婴幼儿每月定额扣除 <tspan class="highlight">2000元</tspan>。</text>
+
+    <rect x="0" y="135" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="165" class="table-header">扣除主体</text>
+    <rect x="100" y="135" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="155" class="table-content">
+      <tspan x="110" dy="0">• 父母双方各扣<tspan class="highlight">50%</tspan>，或</tspan>
+      <tspan x="110" dy="1.5em">• 由一方按扣除标准的<tspan class="highlight">100%</tspan>全额扣除。</tspan>
+    </text>
+
+    <rect x="0" y="195" width="100" height="55" class="tableHeaderCell"/>
+    <text x="15" y="225" class="table-header">注意事项</text>
+    <rect x="100" y="195" width="320" height="55" class="tableContentCell"/>
+    <text x="110" y="215" class="table-content">
+      <tspan x="110" dy="0">• 需填报婴幼儿出生医学证明等</tspan>
+      <tspan x="110" dy="1.5em">  身份信息。</tspan>
+    </text>
+  </g>
+
+  <!-- 个人养老金部分 - 替换08为图标 -->
+  <g transform="translate(40, 2655)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <path d="M-5,-8 L5,-8 L8,-5 L8,5 L-8,5 L-8,-5 Z" class="icon-path" opacity="0.6" />
+      <circle cx="0" cy="-1" r="5" fill="#FFFFFF" opacity="0.5" />
+      <path d="M-3,-1 L0,2 L3,-1" stroke="#FFFFFF" stroke-width="1" />
+      <path d="M-9,5 L9,5 L7,10 L-7,10 Z" class="icon-path" opacity="0.8" />
+    </g>
+    <text x="210" y="25" class="section-title">个人养老金</text>
+    
+    <rect x="0" y="45" width="420" height="85" class="tableContentCell"/>
+    <text x="15" y="70" class="table-content">
+      <tspan x="15" dy="0">• 每年缴纳上限 <tspan class="highlight">12000元</tspan>。</tspan>
+      <tspan x="15" dy="1.5em">• 若在2024年存入，则需要在本次汇算清缴时</tspan>
+      <tspan x="15" dy="1.5em">  进行申报，可在税前扣除，享受退税优惠。</tspan>
+    </text>
+  </g>
+
+  <!-- 通用注意事项部分 - 替换感叹号为更好的图标 -->
+  <g transform="translate(40, 2800)">
+    <rect width="420" height="40" class="sectionHeader" />
+    <g transform="translate(25, 20)">
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF" opacity="0.4" />
+      <path d="M0,-5 L0,2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+      <circle cx="0" cy="5" r="1.5" fill="#FFFFFF" />
+    </g>
+    <text x="210" y="25" class="section-title">关键注意事项</text>
+    
+    <rect x="0" y="45" width="420" height="150" class="tableContentCell"/>
+    <text x="15" y="65" class="note-content">
+      <tspan x="15" dy="1.6em"><text x="15" class="note-title">• 申报材料：</text>所有扣除需<tspan class="highlight">留存相关证明材料备查</tspan>（如发票、合同、协议等）。</tspan>
+      <tspan x="15" dy="1.6em"><text x="15" class="note-title">• 扣除时间：</text>符合条件的年度内扣除，逾期不可补扣（大病医疗除外）。</tspan>
+      <tspan x="15" dy="1.6em"><text x="15" class="note-title">• 重复申报风险：</text>同一项目不得重复享受（如住房贷款利息与租金）。</tspan>
+      <tspan x="15" dy="1.6em"><text x="15" class="note-title">• 虚假申报责任：</text>虚报信息将影响纳税信用并可能承担法律责任。</tspan>
+    </text>
+  </g>
+
+  <!-- 重要提醒部分 - 增强警告图标 -->
+  <g transform="translate(40, 3000)">
+    <rect width="420" height="40" class="warning-section" />
+    <g transform="translate(25, 20)">
+      <path d="M0,-12 L10,5 L-10,5 Z" fill="#FFFFFF" opacity="0.8" />
+      <path d="M0,-4 L0,0" stroke="#C53030" stroke-width="2" />
+      <circle cx="0" cy="2" r="1" fill="#C53030" />
+    </g>
+    <text x="210" y="25" class="section-title">安全提醒</text>
+    
+    <rect x="0" y="45" width="420" height="70" fill="#FFF5F5" rx="4" ry="4" stroke="#FED7D7" stroke-width="1"/>
+    <text x="15" y="70" class="table-content" fill="#C53030" font-weight="600">
+      <tspan x="15" dy="0">务必通过官方渠道（个人所得税APP、</tspan>
+      <tspan x="15" dy="1.5em">自然人电子税务局）如实申报，谨防诈骗！</tspan>
+    </text>
+  </g>
+
+  <!-- 最后添加设计师信息 - 进一步调整位置 -->
+  <g transform="translate(40, 3130)">
+    <line x1="0" y1="-10" x2="420" y2="-10" class="divider" />
+    <text x="210" y="15" text-anchor="middle" font-size="12" fill="#718096">
+      平安银行·宁波分行
+    </text>
+  </g>
+</svg>

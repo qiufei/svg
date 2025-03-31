@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古诗词卡片生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>糖不卷</h1>
+            <p class="subtitle">中国古典诗词卡片生成器</p>
+        </header>
+
+        <div class="input-section">
+            <div class="form-group">
+                <label for="theme">主题</label>
+                <input type="text" id="theme" placeholder="如：春天、思乡、月夜">
+            </div>
+            <div class="form-group">
+                <label for="direction">方向</label>
+                <input type="text" id="direction" placeholder="如：生机、离别、思念">
+            </div>
+            <div class="form-group">
+                <label for="size">尺寸</label>
+                <select id="size">
+                    <option value="small">小尺寸 (适合卡片)</option>
+                    <option value="1920x1080">宽屏 16:9 (1920×1080)</option>
+                    <option value="1280x720">宽屏 16:9 (1280×720)</option>
+                    <option value="1024x768">标准 4:3 (1024×768)</option>
+                    <option value="custom">自定义尺寸</option>
+                </select>
+            </div>
+            <div id="custom-size" class="form-group hidden">
+                <div class="size-inputs">
+                    <input type="number" id="custom-width" placeholder="宽度 (像素)" min="100">
+                    <span>×</span>
+                    <input type="number" id="custom-height" placeholder="高度 (像素)" min="100">
+                </div>
+            </div>
+            <button id="generate-btn">生成诗词卡片</button>
+        </div>
+
+        <div class="card-display">
+            <div id="loading" class="hidden">生成中...</div>
+            <div id="card-container" class="hidden"></div>
+            <button id="download-btn" class="hidden">下载卡片</button>
+        </div>
+
+        <div class="examples">
+            <h3>示例组合</h3>
+            <div class="example-grid">
+                <div class="example" data-theme="春天" data-direction="生机">春天 - 生机</div>
+                <div class="example" data-theme="思乡" data-direction="离别">思乡 - 离别</div>
+                <div class="example" data-theme="月夜" data-direction="思念">月夜 - 思念</div>
+                <div class="example" data-theme="山水" data-direction="隐逸">山水 - 隐逸</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 古韵丹青 | 中国古典诗词之美</p>
+    </footer>
+
+    <script src="poemGenerator.js"></script>
+    <script src="svgGenerator.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
