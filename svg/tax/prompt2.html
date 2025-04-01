@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>讲座：各种发言</title>
+<title>prompt2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./profile.jpg" rel="icon" type="image/jpeg">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0a6deebd9e82ea51b31c25b75327e5f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-449fe9d2e8b55805e22d9263c3f70d3c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../profile.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-831a6e13d34e89ab8943621a9b1bffba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,72 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
@@ -164,7 +102,7 @@ window.Quarto = {
 <span class="menu-text">讲座</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">简介</span></a>
   </li>  
 </ul>
@@ -176,84 +114,97 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
-      <h1 class="title">讲座：各种发言</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<p>请从专业传媒设计师的角度，根据以下内容帮我设计一张svg格式的小贴士图片，图片尺寸要适宜于在手机上显示。具体要求如下： 卡片式布局：使用卡片设计分隔不同内容区块，提高可读性 插图增强：每张卡片区域都配有相关的小图标，帮助用户快速识别内容</p>
+<section id="个人所得税汇算清缴so-easy" class="level1">
+<h1>个人所得税汇算清缴so easy</h1>
+<section id="专项扣除" class="level2">
+<h2 class="anchored" data-anchor-id="专项扣除">专项扣除</h2>
+<p>1.汇缴操作 2025年3月1日至2025年6月30日在个人所得税APP、自然人电子税务局系统完成申报。 2.个人养老金，每年缴纳上限12000元。需在2024年存入，则进行申报。 3.全年一次性奖金 我行发的年终奖属于全年一次性奖金，前期已单独扣税。员工可根据自身需求划入工资薪酬部分缴纳。若划入后，需补缴税款，则不建议纳入。 4.专项附加扣除能填尽填 填写专项附加扣除时，需完善配偶信息。</p>
+</section>
+<section id="子女教育" class="level2">
+<h2 class="anchored" data-anchor-id="子女教育">子女教育</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 3岁至博士研究生阶段的子女（学前教育至全日制学历教育）。&nbsp; &nbsp; &nbsp;- 境内或境外接受教育均可。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 每个子女每月定额扣除 2000元。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 父母双方各扣50%，或由一方全额扣除。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需留存子女学籍证明（如录取通知书、学籍信息等）。&nbsp; &nbsp; &nbsp;- 境外教育需提供境外学校录取通知书、留学签证等证明。</p></li>
+</ol>
+</section>
+<section id="继续教育" class="level2">
+<h2 class="anchored" data-anchor-id="继续教育">继续教育</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 学历（学位）继续教育：境内接受本科及以下学历（学位）教育。&nbsp; &nbsp; &nbsp;- 职业资格继续教育：取得人社部《国家职业资格目录》内的证书。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 学历教育：每月定额扣除 400元（最长不超过48个月）。&nbsp; &nbsp; &nbsp;- 职业资格教育：取得证书当年一次性扣除 3600元。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 纳税人本人（职业资格教育）或其父母（学历教育）。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 职业资格证书需在人社部目录内。&nbsp; &nbsp; &nbsp;- 同一学历继续教育不可重复扣除。</p></li>
+</ol>
+</section>
+<section id="大病医疗" class="level2">
+<h2 class="anchored" data-anchor-id="大病医疗">大病医疗</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 纳税人本人、配偶或未成年子女的医疗费用。&nbsp; &nbsp; &nbsp;- 与基本医保相关的支出，扣除医保报销后个人负担累计超过 1.5万元的部分。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 在 8万元限额内据实扣除。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 纳税人本人或其配偶（未成年子女医疗费用由父母一方扣除）。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需留存医疗服务收费票据、医保结算单等原件或复印件。&nbsp; &nbsp; &nbsp;</p></li>
+</ol>
+</section>
+<section id="住房贷款利息" class="level2">
+<h2 class="anchored" data-anchor-id="住房贷款利息">住房贷款利息</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 纳税人本人或配偶的首套住房商业贷款利息。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 每月定额扣除 1000元，最长不超过 240个月（20年）。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 纳税人本人或配偶（婚前各自购房的可各自扣50%，或由一方全额扣）。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需留存贷款合同、还款凭证。&nbsp; &nbsp; &nbsp;- 不得与住房租金扣除同时享受。</p></li>
+</ol>
+<ul>
+<li>纳税人只能享受一次首套住房贷款的利息扣除。</li>
+</ul>
+</section>
+<section id="住房租金" class="level2">
+<h2 class="anchored" data-anchor-id="住房租金">住房租金</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 纳税人在主要工作城市无自有住房而发生的租房支出。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;-宁波每月 1500元；&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 签订租赁合同的纳税人（夫妻双方在同一城市只能由一方扣除）。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需留存住房租赁合同、协议或付款记录。&nbsp; &nbsp; &nbsp;- 不得与住房贷款利息扣除同时享受。</p></li>
+</ol>
+</section>
+<section id="赡养老人" class="level2">
+<h2 class="anchored" data-anchor-id="赡养老人">赡养老人</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 赡养年满60岁的父母，或子女均已去世的年满60岁的祖父母、外祖父母。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 独生子女：每月 3000元；&nbsp; &nbsp; &nbsp;- 非独生子女：每人每月不超过 1500元（需签订分摊协议）。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 纳税人本人（兄弟姐妹需协商分摊比例）。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需留存赡养协议或共同赡养人身份信息。&nbsp; &nbsp; &nbsp;- 赡养多位老人不叠加扣除。</p></li>
+</ol>
+</section>
+<section id="岁以下婴幼儿照护" class="level2">
+<h2 class="anchored" data-anchor-id="岁以下婴幼儿照护">3岁以下婴幼儿照护</h2>
+<ol type="1">
+<li><p>扣除范围&nbsp; &nbsp; &nbsp;- 纳税人照护3岁以下婴幼儿的支出。&nbsp;</p></li>
+<li><p>扣除标准&nbsp; &nbsp; &nbsp;- 每个婴幼儿每月定额扣除 2000元。&nbsp;</p></li>
+<li><p>扣除主体&nbsp; &nbsp; &nbsp;- 父母双方各扣50%，或由一方全额扣除。&nbsp;</p></li>
+<li><p>注意事项&nbsp; &nbsp; &nbsp;- 需填报婴幼儿出生医学证明等身份信息。&nbsp;</p></li>
+</ol>
+</section>
+<section id="专项附加扣除是国家的税优政策鼓励大家应享尽享税局系统会对信息进行稽核比对可享才享切勿虚报" class="level2">
+<h2 class="anchored" data-anchor-id="专项附加扣除是国家的税优政策鼓励大家应享尽享税局系统会对信息进行稽核比对可享才享切勿虚报">专项附加扣除是国家的税优政策，鼓励大家应享尽享。税局系统会对信息进行稽核比对，可享才享，切勿虚报。</h2>
 
 
+</section>
+</section>
 
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1743549307237" data-listing-reading-time-sort="1" data-listing-word-count-sort="126">
-<a href="./svg/tax/prompt2.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-个人所得税汇算清缴so easy
-</h5>
-<div class="card-text listing-description">
-请从专业传媒设计师的角度，根据以下内容帮我设计一张svg格式的小贴士图片，图片尺寸要适宜于在手机上显示。具体要求如下： 卡片式布局：使用卡片设计分隔不同内容区块，提高可读性 插图增强：每张卡片区域都配有相关的小图标，帮助用户快速识别内容
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1743549307236" data-listing-reading-time-sort="2" data-listing-word-count-sort="314">
-<a href="./svg/tax/prompt.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-个人所得税汇算清缴so easy
-</h5>
-<div class="card-text listing-description">
-请从专业传媒设计师的角度，根据以下内容帮我设计一张svg格式的小贴士图片，图片尺寸要适宜于在手机上显示。具体要求如下：
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -274,150 +225,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
