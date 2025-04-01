@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="1800" viewBox="0 0 390 1800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义样式 -->
+  <defs>
+    <!-- 卡片渐变背景 -->
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f7ff" />
+      <stop offset="100%" stop-color="#bae7ff" />
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9f0ff" />
+      <stop offset="100%" stop-color="#efdbff" />
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6fffb" />
+      <stop offset="100%" stop-color="#b5f5ec" />
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcffe6" />
+      <stop offset="100%" stop-color="#f4ffb8" />
+    </linearGradient>
+    <linearGradient id="card5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2e8" />
+      <stop offset="100%" stop-color="#ffd8bf" />
+    </linearGradient>
+    <linearGradient id="card6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6ffed" />
+      <stop offset="100%" stop-color="#d9f7be" />
+    </linearGradient>
+    <linearGradient id="card7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f6" />
+      <stop offset="100%" stop-color="#ffd6e7" />
+    </linearGradient>
+    <linearGradient id="card8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f5ff" />
+      <stop offset="100%" stop-color="#d6e4ff" />
+    </linearGradient>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1890ff" />
+      <stop offset="100%" stop-color="#096dd9" />
+    </linearGradient>
+    
+    <!-- 图标定义 -->
+    <symbol id="icon-education" viewBox="0 0 24 24">
+      <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path d="M21,5C19.89,4.65 18.67,4.5 17.5,4.5C15.55,4.5 13.45,4.9 12,6C10.55,4.9 8.45,4.5 6.5,4.5C4.55,4.5 2.45,4.9 1,6V20.65C1,20.9 1.25,21.15 1.5,21.15C1.6,21.15 1.65,21.1 1.75,21.1C3.1,20.45 5.05,20 6.5,20C8.45,20 10.55,20.4 12,21.5C13.35,20.65 15.8,20 17.5,20C19.15,20 20.85,20.3 22.25,21.05C22.35,21.1 22.4,21.1 22.5,21.1C22.75,21.1 23,20.85 23,20.6V6C22.4,5.55 21.75,5.25 21,5M21,18.5C19.9,18.15 18.7,18 17.5,18C15.8,18 13.35,18.65 12,19.5V8C13.35,7.15 15.8,6.5 17.5,6.5C18.7,6.5 19.9,6.65 21,7V18.5Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-medical" viewBox="0 0 24 24">
+      <path d="M18,14H14V18H10V14H6V10H10V6H14V10H18M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-house" viewBox="0 0 24 24">
+      <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-key" viewBox="0 0 24 24">
+      <path d="M7,14A2,2 0 0,1 5,12A2,2 0 0,1 7,10A2,2 0 0,1 9,12A2,2 0 0,1 7,14M12.65,10C11.83,7.67 9.61,6 7,6A6,6 0 0,0 1,12A6,6 0 0,0 7,18C9.61,18 11.83,16.33 12.65,14H17V18H21V14H23V10H12.65Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-baby" viewBox="0 0 24 24">
+      <path d="M18.5,4A2.5,2.5 0 0,1 21,6.5A2.5,2.5 0 0,1 18.5,9A2.5,2.5 0 0,1 16,6.5A2.5,2.5 0 0,1 18.5,4M4.5,20A1.5,1.5 0 0,1 3,18.5A1.5,1.5 0 0,1 4.5,17H11.5A1.5,1.5 0 0,1 13,18.5A1.5,1.5 0 0,1 11.5,20H4.5M16.09,19L14.69,15H11L6.75,10.75C6.75,10.75 9,8.25 12.5,8.25C15.5,8.25 15.85,9.25 16.06,9.87L18.92,18C19.2,18.78 18.78,19.64 18,19.92C17.22,20.19 16.36,19.78 16.09,19Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-calculator" viewBox="0 0 24 24">
+      <path d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z" fill="currentColor"/>
+    </symbol>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="390" height="1800" fill="#f0f2f5" />
+
+  <!-- 头部标题区域 -->
+  <rect x="0" y="0" width="390" height="100" fill="url(#headerGradient)" rx="0" ry="0" />
+  <text x="195" y="45" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">个人所得税汇算清缴</text>
+  <text x="195" y="75" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">专项扣除指南</text>
+
+  <!-- 卡片1: 汇缴操作 -->
+  <g transform="translate(15, 115)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card1)" />
+    <circle cx="30" cy="30" r="20" fill="#1890ff" fill-opacity="0.8" />
+    <use href="#icon-calculator" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">汇缴操作</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#1890ff" stroke-opacity="0.3" stroke-width="1" />
+    
+    <text x="20" y="75" font-family="Arial, sans-serif" font-size="14" fill="#333">• 申报时间: 2025年3月1日至6月30日</text>
+    <text x="20" y="100" font-family="Arial, sans-serif" font-size="14" fill="#333">• 申报渠道: 个人所得税APP、自然人电子税务局</text>
+    <text x="20" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">• 个人养老金: 每年缴纳上限12000元</text>
+    <text x="20" y="150" font-family="Arial, sans-serif" font-size="14" fill="#333">• 全年一次性奖金: 可按需划入工资薪酬部分</text>
+    <text x="20" y="175" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">• 注意: 专项附加扣除应享尽享，切勿虚报</text>
+  </g>
+
+  <!-- 卡片2: 子女教育 - 进一步优化文字布局 -->
+  <g transform="translate(15, 310)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card2)" />
+    <circle cx="30" cy="30" r="20" fill="#722ed1" fill-opacity="0.8" />
+    <use href="#icon-education" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">子女教育</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#722ed1" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">3岁至博士研究生阶段的</text>
+    <text x="30" y="102" font-family="Arial, sans-serif" font-size="9" fill="#333">子女教育</text>
+    
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">每个子女每月定额扣除2000元</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">父母双方各扣50%或</text>
+    <text x="210" y="102" font-family="Arial, sans-serif" font-size="9" fill="#333">一方全额扣除</text>
+    
+    <text x="200" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">需留存子女学籍证明</text>
+    <text x="210" y="154" font-family="Arial, sans-serif" font-size="9" fill="#333">境外教育需提供录取通知书等</text>
+  </g>
+
+  <!-- 卡片3: 继续教育 - 进一步优化文字布局 -->
+  <g transform="translate(15, 505)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card3)" />
+    <circle cx="30" cy="30" r="20" fill="#13c2c2" fill-opacity="0.8" />
+    <use href="#icon-book" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">继续教育</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#13c2c2" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">学历继续教育与</text>
+    <text x="30" y="102" font-family="Arial, sans-serif" font-size="9" fill="#333">职业资格继续教育</text>
+    
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">学历教育: 每月400元(最长48个月)</text>
+    <text x="30" y="154" font-family="Arial, sans-serif" font-size="9" fill="#333">职业资格: 一次性扣除3600元</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">纳税人本人或其父母</text>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="126" font-family="Arial, sans-serif" font-size="9" fill="#333">职业资格证书需在人社部目录内</text>
+    <text x="210" y="144" font-family="Arial, sans-serif" font-size="9" fill="#333">同一学历不可重复扣除</text>
+  </g>
+
+  <!-- 卡片4: 大病医疗 - 修复文字超出边框 -->
+  <g transform="translate(15, 700)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card4)" />
+    <circle cx="30" cy="30" r="20" fill="#faad14" fill-opacity="0.8" />
+    <use href="#icon-medical" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">大病医疗</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#faad14" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">本人、配偶、未成年子女的医疗费用</text>
+    <text x="30" y="106" font-family="Arial, sans-serif" font-size="10" fill="#333">医保报销后个人负担超过1.5万元部分</text>
+    
+    <text x="20" y="126" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="144" font-family="Arial, sans-serif" font-size="10" fill="#333">在8万元限额内据实扣除</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">纳税人本人或其配偶</text>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="126" font-family="Arial, sans-serif" font-size="10" fill="#333">需留存医疗服务收费票据</text>
+    <text x="210" y="144" font-family="Arial, sans-serif" font-size="10" fill="#333">医保结算单等原件或复印件</text>
+  </g>
+
+  <!-- 卡片5: 住房贷款利息 - 修复文字超出边框 -->
+  <g transform="translate(15, 895)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card5)" />
+    <circle cx="30" cy="30" r="20" fill="#fa8c16" fill-opacity="0.8" />
+    <use href="#icon-house" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">住房贷款利息</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#fa8c16" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">纳税人本人或配偶的首套住房贷款</text>
+    <text x="30" y="102" font-family="Arial, sans-serif" font-size="10" fill="#333">利息支出</text>
+    
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="10" fill="#333">每月定额扣除1000元</text>
+    <text x="30" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333">最长不超过240个月(20年)</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">纳税人本人或配偶</text>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="126" font-family="Arial, sans-serif" font-size="10" fill="#333">需留存贷款合同和还款凭证</text>
+    <text x="210" y="144" font-family="Arial, sans-serif" font-size="10" fill="#333">不得与住房租金扣除同时享受</text>
+  </g>
+
+  <!-- 卡片6: 住房租金 - 进一步优化文字布局 -->
+  <g transform="translate(15, 1090)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card6)" />
+    <circle cx="30" cy="30" r="20" fill="#52c41a" fill-opacity="0.8" />
+    <use href="#icon-key" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">住房租金</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#52c41a" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">主要工作城市无自有住房的</text>
+    <text x="30" y="102" font-family="Arial, sans-serif" font-size="9" fill="#333">租房支出</text>
+    
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">宁波每月1500元</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">签订租赁合同的纳税人</text>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="126" font-family="Arial, sans-serif" font-size="9" fill="#333">需留存住房租赁合同或付款记录</text>
+    <text x="210" y="144" font-family="Arial, sans-serif" font-size="9" fill="#333">不得与住房贷款利息扣除同时享受</text>
+  </g>
+
+  <!-- 卡片7: 赡养老人 - 修复文字超出边框 -->
+  <g transform="translate(15, 1285)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card7)" />
+    <circle cx="30" cy="30" r="20" fill="#eb2f96" fill-opacity="0.8" />
+    <use href="#icon-heart" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">赡养老人</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#eb2f96" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">赡养年满60岁的父母或祖父母、</text>
+    <text x="30" y="102" font-family="Arial, sans-serif" font-size="10" fill="#333">外祖父母</text>
+    
+    <text x="20" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="140" font-family="Arial, sans-serif" font-size="10" fill="#333">独生子女: 每月3000元</text>
+    <text x="30" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333">非独生子女: 每人每月不超过1500元</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="10" fill="#333">纳税人本人</text>
+    
+    <text x="200" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="126" font-family="Arial, sans-serif" font-size="10" fill="#333">需留存赡养协议</text>
+    <text x="210" y="144" font-family="Arial, sans-serif" font-size="10" fill="#333">赡养多位老人不叠加扣除</text>
+  </g>
+
+  <!-- 卡片8: 3岁以下婴幼儿照护 - 进一步优化文字布局 -->
+  <g transform="translate(15, 1480)">
+    <rect x="0" y="0" width="360" height="180" rx="8" ry="8" fill="url(#card8)" />
+    <circle cx="30" cy="30" r="20" fill="#2f54eb" fill-opacity="0.8" />
+    <use href="#icon-baby" x="18" y="18" width="24" height="24" fill="white" />
+    <text x="60" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">3岁以下婴幼儿照护</text>
+    <line x1="20" y1="50" x2="340" y2="50" stroke="#2f54eb" stroke-opacity="0.3" stroke-width="1" />
+    
+    <!-- 左列 -->
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除范围:</text>
+    <text x="30" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">照护3岁以下婴幼儿的支出</text>
+    
+    <text x="20" y="108" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除标准:</text>
+    <text x="30" y="126" font-family="Arial, sans-serif" font-size="9" fill="#333">每个婴幼儿每月定额扣除2000元</text>
+    
+    <!-- 右列 -->
+    <text x="200" y="70" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">扣除主体:</text>
+    <text x="210" y="88" font-family="Arial, sans-serif" font-size="9" fill="#333">父母双方各扣50%或</text>
+    <text x="210" y="102" font-family="Arial, sans-serif" font-size="9" fill="#333">一方全额扣除</text>
+    
+    <text x="200" y="122" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">注意事项:</text>
+    <text x="210" y="140" font-family="Arial, sans-serif" font-size="9" fill="#333">需填报婴幼儿出生医学证明等信息</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="195" y="1690" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">个人所得税汇算清缴 · 专项扣除指南</text>
+  <text x="195" y="1715" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">请根据自身情况合理享受税收优惠政策</text>
+  <text x="195" y="1740" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">信息仅供参考，详情请咨询税务部门</text>
+</svg>

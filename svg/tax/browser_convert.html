@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SVG转PNG工具</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7fafc;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5282;
+            text-align: center;
+        }
+        .steps {
+            margin-bottom: 20px;
+        }
+        #dropArea {
+            border: 2px dashed #2c5282;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            background-color: #ebf8ff;
+            cursor: pointer;
+        }
+        button {
+            background-color: #2c5282;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #2b6cb0;
+        }
+        #canvas, #svgImage {
+            max-width: 100%;
+            display: none;
+            margin: 20px auto;
+            border: 1px solid #e2e8f0;
+        }
+        #downloadLink {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SVG转PNG工具</h1>
+        
+        <div class="steps">
+            <h3>步骤1: 选择或拖拽SVG文件</h3>
+            <input type="file" id="fileInput" accept=".svg">
+            <div id="dropArea">拖拽SVG文件到这里</div>
+            
+            <h3>步骤2: 设置PNG尺寸</h3>
+            <label for="widthInput">宽度(px): </label>
+            <input type="number" id="widthInput" value="1000" min="1">
+            <label for="heightInput">高度(px): </label>
+            <input type="number" id="heightInput" value="0" min="0" placeholder="自动计算">
+            
+            <h3>步骤3: 转换并下载</h3>
+            <button id="convertBtn">转换为PNG</button>
+        </div>
+        
+        <img id="svgImage" alt="SVG预览">
+        <canvas id="canvas"></canvas>
+        <div id="downloadLink"></div>
+    </div>
+    
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const dropArea = document.getElementById('dropArea');
+        const convertBtn = document.getElementById('convertBtn');
+        const canvas = document.getElementById('canvas');
+        const svgImage = document.getElementById('svgImage');
+        const downloadLinkDiv = document.getElementById('downloadLink');
+        const widthInput = document.getElementById('widthInput');
+        const heightInput = document.getElementById('heightInput');
+        
+        // 拖放功能
+        dropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropArea.style.backgroundColor = '#bee3f8';
+        });
+        
+        dropArea.addEventListener('dragleave', () => {
+            dropArea.style.backgroundColor = '#ebf8ff';
+        });
+        
+        dropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropArea.style.backgroundColor = '#ebf8ff';
+            if (e.dataTransfer.files.length) {
+                fileInput.files = e.dataTransfer.files;
+                loadSVG();
+            }
+        });
+        
+        // 点击拖放区域也可以选择文件
+        dropArea.addEventListener('click', () => {
+            fileInput.click();
+        });
+        
+        fileInput.addEventListener('change', loadSVG);
+        
+        function loadSVG() {
+            const file = fileInput.files[0];
+            if (file && file.type === "image/svg+xml") {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    svgImage.src = e.target.result;
+                    svgImage.style.display = 'block';
+                    svgImage.onload = () => {
+                        // 如果高度为0，根据宽度和SVG比例自动计算
+                        if (parseInt(heightInput.value) === 0) {
+                            const aspectRatio = svgImage.naturalHeight / svgImage.naturalWidth;
+                            heightInput.value = Math.round(parseInt(widthInput.value) * aspectRatio);
+                        }
+                    };
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+        
+        convertBtn.addEventListener('click', () => {
+            if (!svgImage.src) {
+                alert('请先选择SVG文件');
+                return;
+            }
+            
+            const width = parseInt(widthInput.value);
+            const height = parseInt(heightInput.value) || width;
+            
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            
+            // 创建新的Image对象用于绘制
+            const img = new Image();
+            img.onload = () => {
+                ctx.drawImage(img, 0, 0, width, height);
+                canvas.style.display = 'block';
+                
+                // 创建下载链接
+                const pngUrl = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                downloadLink.href = pngUrl;
+                downloadLink.download = fileInput.files[0].name.replace('.svg', '.png');
+                downloadLink.className = 'downloadBtn';
+                downloadLink.innerHTML = '下载PNG图片';
+                downloadLink.style.display = 'inline-block';
+                downloadLink.style.padding = '10px 20px';
+                downloadLink.style.backgroundColor = '#38a169';
+                downloadLink.style.color = 'white';
+                downloadLink.style.textDecoration = 'none';
+                downloadLink.style.borderRadius = '5px';
+                
+                downloadLinkDiv.innerHTML = '';
+                downloadLinkDiv.appendChild(downloadLink);
+                downloadLinkDiv.style.display = 'block';
+            };
+            img.src = svgImage.src;
+        });
+    </script>
+</body>
+</html>
